@@ -1,0 +1,21 @@
+c:\users\i.la.maza.villalba\documents\visual studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\bin\Debug\MantenimientoPedidos.Win.exe.config
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\bin\Debug\MantenimientoPedidos.Win.exe
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\bin\Debug\MantenimientoPedidos.Win.pdb
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.csprojResolveAssemblyReference.cache
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.frmLogin.resources
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.Properties.Resources.resources
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.csproj.GenerateResource.Cache
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.exe
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.pdb
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\bin\Debug\MantenimientoPedidos.BussinesLogic.dll
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\bin\Debug\MantenimientoPedidos.DataAccess.dll
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\bin\Debug\MantenimientoPedidos.BussinesLogic.pdb
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\bin\Debug\MantenimientoPedidos.DataAccess.pdb
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.frmDetailOrder.resources
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.frmMain.resources
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.frmProduct.resources
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\bin\Debug\MantenimientoPedidos.Entities.dll
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Win\bin\Debug\MantenimientoPedidos.Entities.pdb
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.Win\bin\Debug\MantenimientoPedidos.Win.exe.config
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.exe
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.pdb

@@ -1,0 +1,5 @@
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Entities\bin\Debug\MantenimientoPedidos.Entities.dll
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Entities\bin\Debug\MantenimientoPedidos.Entities.pdb
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Entities\obj\Debug\MantenimientoPedidos.Entities.csprojResolveAssemblyReference.cache
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Entities\obj\Debug\MantenimientoPedidos.Entities.dll
+C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.Entities\obj\Debug\MantenimientoPedidos.Entities.pdb
