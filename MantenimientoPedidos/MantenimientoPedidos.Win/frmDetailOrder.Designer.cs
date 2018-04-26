@@ -44,14 +44,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnModify = new System.Windows.Forms.Button();
+            this.grdOrderDetail = new System.Windows.Forms.DataGridView();
             this.grbClientInformation.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdOrderDetail)).BeginInit();
             this.SuspendLayout();
             // 
             // grbClientInformation
@@ -182,10 +182,10 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Controls.Add(this.btnBack);
+            this.groupBox3.Controls.Add(this.btnRemove);
+            this.groupBox3.Controls.Add(this.btnModify);
+            this.groupBox3.Controls.Add(this.grdOrderDetail);
             this.groupBox3.Location = new System.Drawing.Point(12, 169);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(667, 268);
@@ -193,43 +193,43 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detalle del Pedido";
             // 
-            // button3
+            // btnBack
             // 
-            this.button3.Location = new System.Drawing.Point(571, 232);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Volver";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnBack.Location = new System.Drawing.Point(571, 232);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 3;
+            this.btnBack.Text = "Volver";
+            this.btnBack.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnRemove
             // 
-            this.button2.Location = new System.Drawing.Point(104, 232);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRemove.Location = new System.Drawing.Point(104, 232);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(75, 23);
+            this.btnRemove.TabIndex = 2;
+            this.btnRemove.Text = "Eliminar";
+            this.btnRemove.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnModify
             // 
-            this.button1.Location = new System.Drawing.Point(23, 232);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Modificar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnModify.Location = new System.Drawing.Point(23, 232);
+            this.btnModify.Name = "btnModify";
+            this.btnModify.Size = new System.Drawing.Size(75, 23);
+            this.btnModify.TabIndex = 1;
+            this.btnModify.Text = "Modificar";
+            this.btnModify.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // grdOrderDetail
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 28);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(623, 195);
-            this.dataGridView1.TabIndex = 0;
+            this.grdOrderDetail.AllowUserToAddRows = false;
+            this.grdOrderDetail.AllowUserToDeleteRows = false;
+            this.grdOrderDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdOrderDetail.Location = new System.Drawing.Point(23, 28);
+            this.grdOrderDetail.Name = "grdOrderDetail";
+            this.grdOrderDetail.ReadOnly = true;
+            this.grdOrderDetail.Size = new System.Drawing.Size(623, 195);
+            this.grdOrderDetail.TabIndex = 0;
             // 
             // frmDetailOrder
             // 
@@ -247,7 +247,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdOrderDetail)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -270,9 +270,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnModify;
+        private System.Windows.Forms.DataGridView grdOrderDetail;
     }
 }

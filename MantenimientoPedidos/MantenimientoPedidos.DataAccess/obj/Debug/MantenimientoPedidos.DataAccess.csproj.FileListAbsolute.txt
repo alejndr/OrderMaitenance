@@ -5,3 +5,10 @@ C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoP
 C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.DataAccess\obj\Debug\MantenimientoPedidos.DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.DataAccess\obj\Debug\MantenimientoPedidos.DataAccess.dll
 C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.DataAccess\obj\Debug\MantenimientoPedidos.DataAccess.pdb
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.DataAccess\bin\Debug\MantenimientoPedidos.DataAccess.dll
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.DataAccess\bin\Debug\MantenimientoPedidos.DataAccess.pdb
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.DataAccess\bin\Debug\MantenimientoPedidos.Entities.dll
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.DataAccess\bin\Debug\MantenimientoPedidos.Entities.pdb
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.DataAccess\obj\Debug\MantenimientoPedidos.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.DataAccess\obj\Debug\MantenimientoPedidos.DataAccess.dll
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.DataAccess\obj\Debug\MantenimientoPedidos.DataAccess.pdb

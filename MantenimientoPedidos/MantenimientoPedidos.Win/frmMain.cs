@@ -2,12 +2,6 @@
 using MantenimientoPedidos.Entities;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MantenimientoPedidos.Win
@@ -272,6 +266,8 @@ namespace MantenimientoPedidos.Win
             }
             
         }
+
+        // TODO: Double click to open the Order detail form
 
         /// <summary>
         /// Check if grid buttons can be enabled.

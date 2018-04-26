@@ -7,3 +7,12 @@ C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoP
 C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.BussinesLogic\obj\Debug\MantenimientoPedidos.BussinesLogic.csprojResolveAssemblyReference.cache
 C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.BussinesLogic\obj\Debug\MantenimientoPedidos.BussinesLogic.dll
 C:\Users\i.la.maza.villalba\Documents\Visual Studio 2015\Projects\MantenimientoPedidos\MantenimientoPedidos.BussinesLogic\obj\Debug\MantenimientoPedidos.BussinesLogic.pdb
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.BussinesLogic\bin\Debug\MantenimientoPedidos.BussinesLogic.dll
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.BussinesLogic\bin\Debug\MantenimientoPedidos.BussinesLogic.pdb
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.BussinesLogic\bin\Debug\MantenimientoPedidos.DataAccess.dll
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.BussinesLogic\bin\Debug\MantenimientoPedidos.Entities.dll
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.BussinesLogic\bin\Debug\MantenimientoPedidos.DataAccess.pdb
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.BussinesLogic\bin\Debug\MantenimientoPedidos.Entities.pdb
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.BussinesLogic\obj\Debug\MantenimientoPedidos.BussinesLogic.csprojResolveAssemblyReference.cache
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.BussinesLogic\obj\Debug\MantenimientoPedidos.BussinesLogic.dll
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.BussinesLogic\obj\Debug\MantenimientoPedidos.BussinesLogic.pdb

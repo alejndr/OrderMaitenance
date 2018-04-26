@@ -156,5 +156,88 @@ namespace MantenimientoPedidos.DataAccess
             }
 
         }
+
+        /// <summary>
+        /// Get a list of the order details.
+        /// </summary>
+        /// <param name="orderId"></param>
+        /// <returns></returns>
+        public List<OrderDetail> GetOrderDetail(int orderId)
+        {
+            // Init return value
+
+            List<OrderDetail> orderDetailList = new List<OrderDetail>();
+
+            SqlConnection conn = new SqlConnection(base.ConnectionString);
+
+            SqlDataReader reader = null;
+
+            try
+            {
+
+                // Open connection 
+                conn.Open();
+
+                // Set query
+                StringBuilder query = new StringBuilder();
+
+                
+                query.Append("SELECT SalesOrderID, CarrierTrackingNumber, OrderQty, Product.Name as Name ");
+                query.Append("FROM Sales.SalesOrderDetail ");
+                query.Append("inner join Sales.SpecialOfferProduct on SalesOrderDetail.ProductID = SpecialOfferProduct.ProductID ");
+                query.Append("inner join Production.Product on SpecialOfferProduct.ProductID = Product.ProductID ");
+                query.Append("WHERE SalesOrderID = @OrderId ");
+
+
+                // Init command
+                SqlCommand cmd = new SqlCommand(query.ToString(), conn);
+
+                SqlParameter paramId = new SqlParameter("@OrderId", orderId);
+                cmd.Parameters.Add(paramId);
+
+                
+                // Execute
+                reader = cmd.ExecuteReader();
+
+
+                // Read 
+                while (reader.Read())
+                {
+                    OrderDetail actualOrderDetail = new OrderDetail();
+
+                    actualOrderDetail.ID = Convert.ToInt32(reader["SalesOrderID"]);
+                    actualOrderDetail.TrackingNumber = reader["CarrierTrackingNumber"].ToString();
+                    actualOrderDetail.OrderQty = Convert.ToInt32(reader["OrderQty"]);
+                    actualOrderDetail.ProductName = reader["Name"].ToString();
+                    
+                    orderDetailList.Add(actualOrderDetail);
+                    
+                }
+
+
+            }
+            catch 
+            {
+
+                throw;
+            }
+            finally
+            {
+                // Close datareader
+                if (reader != null)
+                {
+                    reader.Close();
+                }
+
+                // Close connection
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+
+
+            return orderDetailList;
+        }
     }
 }
