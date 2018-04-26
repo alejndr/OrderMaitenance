@@ -201,6 +201,7 @@
             this.btnBack.TabIndex = 3;
             this.btnBack.Text = "Volver";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnRemove
             // 
@@ -210,6 +211,7 @@
             this.btnRemove.TabIndex = 2;
             this.btnRemove.Text = "Eliminar";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnModify
             // 
@@ -219,6 +221,7 @@
             this.btnModify.TabIndex = 1;
             this.btnModify.Text = "Modificar";
             this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // grdOrderDetail
             // 
@@ -230,6 +233,7 @@
             this.grdOrderDetail.ReadOnly = true;
             this.grdOrderDetail.Size = new System.Drawing.Size(623, 195);
             this.grdOrderDetail.TabIndex = 0;
+            this.grdOrderDetail.SelectionChanged += new System.EventHandler(this.grdOrderDetail_SelectionChanged);
             // 
             // frmDetailOrder
             // 

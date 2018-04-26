@@ -55,6 +55,46 @@ namespace MantenimientoPedidos.Win
             InitilizeForm();
         }
 
+        /// <summary>
+        /// Selection changed grid event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void grdOrderDetail_SelectionChanged(object sender, EventArgs e)
+        {
+            CheckEnableGridButtons();
+        }
+
+        /// <summary>
+        /// Modify order event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Remove Product event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Back button event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
 
 
         #endregion Events
@@ -190,8 +230,10 @@ namespace MantenimientoPedidos.Win
             btnRemove.Enabled = existRows;
         }
 
+
+
         #endregion Private methods
 
-
+        
     }
 }

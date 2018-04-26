@@ -220,6 +220,7 @@
             this.grdOrders.Size = new System.Drawing.Size(635, 201);
             this.grdOrders.TabIndex = 0;
             this.grdOrders.SelectionChanged += new System.EventHandler(this.grdOrders_SelectionChanged);
+            this.grdOrders.DoubleClick += new System.EventHandler(this.grdOrders_DoubleClick);
             // 
             // frmMain
             // 
@@ -231,6 +232,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmMain";
             this.Text = "Mantenimiento de Pedidos";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

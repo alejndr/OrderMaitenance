@@ -92,6 +92,26 @@ namespace MantenimientoPedidos.Win
             RemoveOrder();
         }
 
+        /// <summary>
+        /// Double click grid event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void grdOrders_DoubleClick(object sender, EventArgs e)
+        {
+            ShowOrderDetail();
+        }
+
+        /// <summary>
+        /// Exit Aplication event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
         #endregion Events
 
         #region Private methods
@@ -333,6 +353,8 @@ namespace MantenimientoPedidos.Win
                 }
             }
         }
+
+
 
 
         #endregion Private methods

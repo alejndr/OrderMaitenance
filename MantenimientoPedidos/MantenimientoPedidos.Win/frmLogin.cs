@@ -57,6 +57,9 @@ namespace MantenimientoPedidos.Win
         private void btn_Conectar_Click(object sender, EventArgs e)
         {
             checkLogin();
+            
+            
+
         }
 
         /// <summary>
@@ -100,10 +103,13 @@ namespace MantenimientoPedidos.Win
             {
                 if (LoginBL.ValidateExistCustomer(id))
                 {
-                    
+                    this.Visible = false;
+
                     frmMain frmMain = new frmMain(id);
                     frmMain.ShowDialog();
-                   
+
+                    
+                    
                 }
                 else
                 {
