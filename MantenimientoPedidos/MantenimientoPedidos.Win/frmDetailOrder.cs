@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace MantenimientoPedidos.Win
 {
-    public partial class frmDetailOrder : Form
+    public partial class frmDetailOrder : frmBase
     {
 
         #region Global variables
@@ -21,7 +21,7 @@ namespace MantenimientoPedidos.Win
         
         private Customer _CustomerData;
 
-        private OrderDetail _OrderDetailData;
+        private Product _ProductData;
 
         #endregion Global variables
 
@@ -81,7 +81,7 @@ namespace MantenimientoPedidos.Win
         /// <param name="e"></param>
         private void btnRemove_Click(object sender, EventArgs e)
         {
-
+            RemoveProduct();
         }
 
         /// <summary>
@@ -185,10 +185,32 @@ namespace MantenimientoPedidos.Win
                 Visible = true
             };
 
+            DataGridViewColumn colSpecialOfferID = new DataGridViewTextBoxColumn()
+            {
+                DataPropertyName = "SpecialOfferID",
+                Name = "colSpecialOfferID",
+                HeaderText = "Special Offer ID",
+                ValueType = typeof(int),
+                Visible = false
+            };
+
+            DataGridViewColumn colSalesOrderDetailID = new DataGridViewTextBoxColumn()
+            {
+                DataPropertyName = "SalesOrderDetailID",
+                Name = "colSalesOrderDetailID",
+                HeaderText = "Sales Order Detail ID",
+                ValueType = typeof(int),
+                Visible = false
+            };
+
+
+
             grdOrderDetail.Columns.Add(colOrderID);
             grdOrderDetail.Columns.Add(colOrderTrackingNumber);
             grdOrderDetail.Columns.Add(colOrderQty);
             grdOrderDetail.Columns.Add(colProductName);
+            grdOrderDetail.Columns.Add(colSpecialOfferID);
+            grdOrderDetail.Columns.Add(colSalesOrderDetailID);
 
             // Set properties
             
@@ -210,14 +232,14 @@ namespace MantenimientoPedidos.Win
         /// </summary>
         private void GetOrderDetail()
         {
-            OrderBussinesLogic OrderBL = new OrderBussinesLogic();
-            List<OrderDetail> orderDetailList = new List<OrderDetail>();
+            ProductBussinesLogic ProductBL = new ProductBussinesLogic();
+            List<Product> orderDetailList = new List<Product>();
 
             // Get search criteria;
             int orderId = _OrderData.ID;
 
             // Get the list with the data
-            orderDetailList = OrderBL.GetOrderDetail(orderId);
+            orderDetailList = ProductBL.GetProduct(orderId);
 
             // Bind grid
             grdOrderDetail.DataSource = orderDetailList;
@@ -246,19 +268,57 @@ namespace MantenimientoPedidos.Win
 
             if (grdOrderDetail.SelectedRows.Count > 0)
             {
-                _OrderDetailData = (OrderDetail)grdOrderDetail.CurrentRow.DataBoundItem;
+                _ProductData = (Product)grdOrderDetail.CurrentRow.DataBoundItem;
 
-                frmProduct frmProduct = new frmProduct(_OrderDetailData);
+                frmProduct frmProduct = new frmProduct(_ProductData);
                 frmProduct.ShowDialog();
             }
 
         }
+
+        /// <summary>
+        /// Remove fisically a product
+        /// </summary>
+        private void RemoveProduct()
+        {
+            if (ShowConfirmationMessage("Are you sure?", "Remove Product") == DialogResult.Yes)
+            {
+                if (grdOrderDetail.SelectedRows.Count > 0)
+                {
+                    List<Product> productList = new List<Product>();
+                    Product product = (Product)grdOrderDetail.SelectedRows[0].DataBoundItem;
+
+                    
+                    try
+                    {
+                        ProductBussinesLogic productBL = new ProductBussinesLogic();
+
+                        productBL.RemoveProduct(product);
+
+                        // Refresh Grid
+                        int orderId = _OrderData.ID;
+
+                        // Get the list with the data
+                        productList = productBL.GetProduct(orderId);
+                        
+                        grdOrderDetail.DataSource = productList;
+                        grdOrderDetail.ClearSelection();
+
+                        ShowMessage("Product removed successfully.");
+                        
+                    }
+                    catch 
+                    {
+
+                        throw;
+                    }
+                }
+            }
+        }
+        
         
 
         #endregion Private methods
-
-        // TODO: Double click in the grid to open the product detail
-        // TODO: Link this form with the product detail form
-
+        
     }
 }

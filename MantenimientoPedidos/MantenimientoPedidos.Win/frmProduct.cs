@@ -11,17 +11,17 @@ using System.Windows.Forms;
 
 namespace MantenimientoPedidos.Win
 {
-    public partial class frmProduct : Form
+    public partial class frmProduct : frmBase
     {
         #region Global variables
 
-        public OrderDetail _OrderDetailData;
+        public Product _OrderDetailData;
 
         #endregion Global variables
 
         #region Constructor
 
-        public frmProduct(OrderDetail orderDetail)
+        public frmProduct(Product orderDetail)
         {
             InitializeComponent();
 

@@ -54,15 +54,7 @@ namespace MantenimientoPedidos.BussinesLogic
             _OrderDataAccess.RemoveOrder(orderToRemove);
         }
 
-        /// <summary>
-        /// Call the method GetOrderDetail.
-        /// </summary>
-        /// <param name="orderId"></param>
-        /// <returns></returns>
-        public List<OrderDetail> GetOrderDetail(int orderId)
-        {
-            return _OrderDataAccess.GetOrderDetail(orderId);
-        }
+        
 
         #endregion Public methods
     }

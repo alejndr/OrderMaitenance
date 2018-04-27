@@ -43,6 +43,7 @@
     <Compile Include="Base\DataAccessBase.cs" />
     <Compile Include="CustomerDataAccess.cs" />
     <Compile Include="OrderDataAccess.cs" />
+    <Compile Include="ProductDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

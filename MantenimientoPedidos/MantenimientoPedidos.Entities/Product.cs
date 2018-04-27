@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MantenimientoPedidos.Entities
 {
-    public class OrderDetail
+    public class Product
     {
         public int ID { get; set; }
 
@@ -15,6 +15,10 @@ namespace MantenimientoPedidos.Entities
         public int OrderQty { get; set; }
 
         public string ProductName { get; set; }
+
+        public int SpecialOfferID { get; set; }
+
+        public int SalesOrderDetailID { get; set; }
 
     }
 }
