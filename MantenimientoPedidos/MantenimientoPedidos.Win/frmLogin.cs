@@ -58,8 +58,6 @@ namespace MantenimientoPedidos.Win
         {
             checkLogin();
             
-            
-
         }
 
         /// <summary>
@@ -103,12 +101,14 @@ namespace MantenimientoPedidos.Win
             {
                 if (LoginBL.ValidateExistCustomer(id))
                 {
+
+                    // Make the form invisible
                     this.Visible = false;
+                    this.ShowInTaskbar = false;
+                    this.ShowIcon = false;
 
                     frmMain frmMain = new frmMain(id);
                     frmMain.ShowDialog();
-
-                    
                     
                 }
                 else

@@ -16,13 +16,12 @@ namespace MantenimientoPedidos.Win
     {
 
         #region Global variables
-
-        /// <summary>
-        /// Order id.
-        /// </summary>
+        
         private Order _OrderData;
-
+        
         private Customer _CustomerData;
+
+        private OrderDetail _OrderDetailData;
 
         #endregion Global variables
 
@@ -72,7 +71,7 @@ namespace MantenimientoPedidos.Win
         /// <param name="e"></param>
         private void btnModify_Click(object sender, EventArgs e)
         {
-
+            ShowProductDetail();
         }
 
         /// <summary>
@@ -95,6 +94,15 @@ namespace MantenimientoPedidos.Win
             this.Close();
         }
 
+        /// <summary>
+        /// Open Product detail form on double click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void grdOrderDetail_DoubleClick(object sender, EventArgs e)
+        {
+            ShowProductDetail();
+        }
 
 
         #endregion Events
@@ -222,7 +230,7 @@ namespace MantenimientoPedidos.Win
         /// <summary>
         /// Check if grid buttons can be enabled.
         /// </summary>
-        public void CheckEnableGridButtons()
+        private void CheckEnableGridButtons()
         {
             bool existRows = grdOrderDetail.SelectedRows.Count > 0;
 
@@ -230,10 +238,27 @@ namespace MantenimientoPedidos.Win
             btnRemove.Enabled = existRows;
         }
 
+        /// <summary>
+        /// Show product detail form
+        /// </summary>
+        private void ShowProductDetail()
+        {
 
+            if (grdOrderDetail.SelectedRows.Count > 0)
+            {
+                _OrderDetailData = (OrderDetail)grdOrderDetail.CurrentRow.DataBoundItem;
+
+                frmProduct frmProduct = new frmProduct(_OrderDetailData);
+                frmProduct.ShowDialog();
+            }
+
+        }
+        
 
         #endregion Private methods
 
-        
+        // TODO: Double click in the grid to open the product detail
+        // TODO: Link this form with the product detail form
+
     }
 }

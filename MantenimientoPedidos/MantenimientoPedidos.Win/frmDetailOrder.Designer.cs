@@ -234,6 +234,7 @@
             this.grdOrderDetail.Size = new System.Drawing.Size(623, 195);
             this.grdOrderDetail.TabIndex = 0;
             this.grdOrderDetail.SelectionChanged += new System.EventHandler(this.grdOrderDetail_SelectionChanged);
+            this.grdOrderDetail.DoubleClick += new System.EventHandler(this.grdOrderDetail_DoubleClick);
             // 
             // frmDetailOrder
             // 

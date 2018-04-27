@@ -3,9 +3,7 @@ using MantenimientoPedidos.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace MantenimientoPedidos.DataAccess
 {
@@ -76,8 +74,7 @@ namespace MantenimientoPedidos.DataAccess
                     actualOrder.Enable = (bool)reader["SalesOrderActive"];
 
                     orderList.Add(actualOrder);
-
-
+                    
                 }
             }
             catch
