@@ -50,6 +50,16 @@ namespace MantenimientoPedidos.BussinesLogic
             _ProductDataAccess.RemoveProduct(product);
         }
 
+        /// <summary>
+        /// Call the method ModifyOrderQty
+        /// </summary>
+        /// <param name="product"></param>
+        /// <param name="orderQty"></param>
+        public void ModifyOrderQty(Product product, int orderQty)
+        {
+            _ProductDataAccess.ModifyOrderQty(product, orderQty);
+        }
+
         #endregion Public Methods
     }
 }

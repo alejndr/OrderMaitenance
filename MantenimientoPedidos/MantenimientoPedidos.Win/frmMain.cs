@@ -294,11 +294,23 @@ namespace MantenimientoPedidos.Win
         /// </summary>
         private void CheckEnableGridButtons()
         {
-            bool existRows = grdOrders.SelectedRows.Count > 0;
+          
+            if (grdOrders.SelectedRows.Count > 0)
+            {
+                Order isEnabled = (Order)grdOrders.CurrentRow.DataBoundItem;
 
-            btnModify.Enabled = existRows;
-            btnRemove.Enabled = existRows;
-            
+                if (isEnabled.Enable == true)
+                {
+                    btnModify.Enabled = true;
+                    btnRemove.Enabled = true;
+                }
+                else
+                {
+                    btnModify.Enabled = false;
+                    // TODO: [Como ampliación de la práctica se podría habilitar el acceso al detalle de aquellos pedidos eliminados, teniendo en cuenta que dicho formulario sería de sólo lectura]
+                    btnRemove.Enabled = false;
+                }
+            }
         }
 
         /// <summary>

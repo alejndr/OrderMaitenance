@@ -72,6 +72,8 @@ namespace MantenimientoPedidos.Win
         private void btnModify_Click(object sender, EventArgs e)
         {
             ShowProductDetail();
+
+            
         }
 
         /// <summary>
@@ -230,7 +232,7 @@ namespace MantenimientoPedidos.Win
         /// <summary>
         /// Set the grid with the order details
         /// </summary>
-        private void GetOrderDetail()
+        public void GetOrderDetail()
         {
             ProductBussinesLogic ProductBL = new ProductBussinesLogic();
             List<Product> orderDetailList = new List<Product>();
@@ -270,7 +272,7 @@ namespace MantenimientoPedidos.Win
             {
                 _ProductData = (Product)grdOrderDetail.CurrentRow.DataBoundItem;
 
-                frmProduct frmProduct = new frmProduct(_ProductData);
+                frmProduct frmProduct = new frmProduct(_ProductData, this);
                 frmProduct.ShowDialog();
             }
 

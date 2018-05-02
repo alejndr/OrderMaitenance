@@ -152,5 +152,53 @@ namespace MantenimientoPedidos.DataAccess
             }
         }
 
+        public void ModifyOrderQty(Product product, int orderQty)
+        {
+            SqlConnection conn = new SqlConnection(base.ConnectionString);
+
+            try
+            {
+                // Open connection
+                conn.Open();
+
+                // Set query
+                StringBuilder query = new StringBuilder();
+
+                query.Append(" UPDATE	Sales.SalesOrderDetail ");
+                query.Append(" SET		OrderQty = @OrderQty, ");
+                query.Append(" 		    ModifiedDate = getdate() ");
+                query.Append(" WHERE	SalesOrderID = @SalesOrderId ");
+                query.Append(" AND		SalesOrderDetailID = @SalesOrderDetailID ");
+
+                // Init command
+                SqlCommand cmd = new SqlCommand(query.ToString(), conn);
+
+                SqlParameter paramOrderId = new SqlParameter("@SalesOrderId", product.ID);
+                cmd.Parameters.Add(paramOrderId);
+
+                SqlParameter paramOrderDetailId = new SqlParameter("@SalesOrderDetailID", product.SalesOrderDetailID);
+                cmd.Parameters.Add(paramOrderDetailId);
+
+                SqlParameter paramOrderQty = new SqlParameter("@OrderQty", orderQty);
+                cmd.Parameters.Add(paramOrderQty);
+
+                // Execute
+                cmd.ExecuteNonQuery();
+            }
+            catch 
+            {
+
+                throw;
+            }
+            finally
+            {
+                // Close connection
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+        }
+
     }
 }
