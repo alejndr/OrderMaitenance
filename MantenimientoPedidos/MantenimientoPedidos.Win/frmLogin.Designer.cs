@@ -43,7 +43,7 @@
             this.btn_Conect.Name = "btn_Conect";
             this.btn_Conect.Size = new System.Drawing.Size(75, 23);
             this.btn_Conect.TabIndex = 0;
-            this.btn_Conect.Text = "Conectar";
+            this.btn_Conect.Text = "Conect";
             this.btn_Conect.UseVisualStyleBackColor = true;
             this.btn_Conect.Click += new System.EventHandler(this.btn_Conectar_Click);
             // 
@@ -67,30 +67,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(72, 92);
+            this.label1.Location = new System.Drawing.Point(66, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Id Usuario";
+            this.label1.Text = "User id";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(66, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Contraseña";
+            this.label2.Text = "Password";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 35);
+            this.label3.Location = new System.Drawing.Point(84, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(345, 20);
+            this.label3.Size = new System.Drawing.Size(201, 20);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Por favor, introduzca sus datos de acceso";
+            this.label3.Text = "Please introduce your id";
             // 
             // frmLogin
             // 

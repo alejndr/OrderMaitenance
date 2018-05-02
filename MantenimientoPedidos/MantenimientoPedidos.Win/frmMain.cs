@@ -39,9 +39,7 @@ namespace MantenimientoPedidos.Win
         #endregion Constructor
 
         #region Events
-
-        // TODO: Initialize form -> SetHeader, SetDefaultCriterias, Search
-
+        
         /// <summary>
         /// Initialize components on load.
         /// </summary>
@@ -257,8 +255,9 @@ namespace MantenimientoPedidos.Win
             }
             else
             {
-                base.ShowMessage("The start date has to be lower than the end date.");
-            }
+                    // base.ShowMessage("The start date has to be lower than the end date.", "Error", MessageType.Info);
+                    MessageBoxEx.Show("The start date has to be lower than the end date.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch
             {
@@ -286,9 +285,7 @@ namespace MantenimientoPedidos.Win
             }
             
         }
-
-        // TODO: Double click to open the Order detail form
-
+        
         /// <summary>
         /// Check if grid buttons can be enabled.
         /// </summary>
@@ -307,7 +304,6 @@ namespace MantenimientoPedidos.Win
                 else
                 {
                     btnModify.Enabled = false;
-                    // TODO: [Como ampliación de la práctica se podría habilitar el acceso al detalle de aquellos pedidos eliminados, teniendo en cuenta que dicho formulario sería de sólo lectura]
                     btnRemove.Enabled = false;
                 }
             }

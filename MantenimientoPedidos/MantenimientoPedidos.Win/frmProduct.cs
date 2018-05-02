@@ -63,14 +63,9 @@ namespace MantenimientoPedidos.Win
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            bool Edited = ModifyQty();
-
-            _ParentForm.GetOrderDetail();
-
+            ModifyQty();
+            
             this.Close();
-
-            
-            
             
         }
 
@@ -110,15 +105,14 @@ namespace MantenimientoPedidos.Win
         /// <summary>
         /// Modify the order quantity
         /// </summary>
-        private bool ModifyQty()
+        private void ModifyQty()
         {
-            bool Edited = false;
 
-            if (ShowConfirmationMessage("Are you sure?", "Modify Quantity") == DialogResult.Yes)
+            if (nudQuantity.Value > 0)
             {
                 
-                if (nudQuantity.Value > 0)
-                {
+                if (ShowConfirmationMessage("Are you sure?", "Modify Quantity") == DialogResult.Yes)
+                    {
                     Product product = _OrderDetailData;
                     int quantity = (int)nudQuantity.Value;
 
@@ -127,9 +121,10 @@ namespace MantenimientoPedidos.Win
                         ProductBussinesLogic ProductBL = new ProductBussinesLogic();
 
                         ProductBL.ModifyOrderQty(product, quantity);
-
-                        Edited = true;
                         
+                        _ParentForm.GetOrderDetail();
+                        _ParentForm.ShowMessage("Quantity modified succesfully.");
+
                     }
                     catch 
                     {
@@ -137,19 +132,15 @@ namespace MantenimientoPedidos.Win
                         throw;
                     }
                 }
-                else
-                {
-                    ShowMessage("The quantity must be greater than zero.");
-                    Edited = false;
-                }
+                
                 
             }
             else
             {
-                Edited = false;
+                ShowMessage("The quantity must be greater than zero.", "Error", MessageType.Info);
+
             }
 
-            return Edited;
         }
         
         #endregion Private methods

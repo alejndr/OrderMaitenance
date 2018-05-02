@@ -34,3 +34,4 @@ C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\Ma
 C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.frmProduct.resources
 C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.Properties.Resources.resources
 C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.csproj.GenerateResource.Cache
+C:\Users\i.la.maza.villalba\Source\Repos\OrderMaitenance\MantenimientoPedidos\MantenimientoPedidos.Win\obj\Debug\MantenimientoPedidos.Win.frmBase.resources

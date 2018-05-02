@@ -37,11 +37,12 @@ namespace MantenimientoPedidos.DataAccess
                 StringBuilder query = new StringBuilder();
 
 
-                query.Append("SELECT        SalesOrderID, CarrierTrackingNumber, OrderQty, Product.Name as Name, SpecialOfferProduct.SpecialOfferID as SpecialOfferID, SalesOrderDetail.SalesOrderDetailID as SalesOrderDetailID ");
+                query.Append("SELECT        SalesOrderID, CarrierTrackingNumber, OrderQty, Product.Name as Name, SalesOrderDetail.SalesOrderDetailID as SalesOrderDetailID ");
                 query.Append("FROM          Sales.SalesOrderDetail ");
                 query.Append("inner join    Sales.SpecialOfferProduct on SalesOrderDetail.ProductID = SpecialOfferProduct.ProductID ");
                 query.Append("inner join    Production.Product on SpecialOfferProduct.ProductID = Product.ProductID ");
                 query.Append("WHERE         SalesOrderID = @OrderId ");
+                query.Append("group by SalesOrderID, CarrierTrackingNumber, OrderQty, Name, SalesOrderDetailID ");
 
 
                 // Init command
@@ -64,7 +65,7 @@ namespace MantenimientoPedidos.DataAccess
                     actualOrderDetail.TrackingNumber = reader["CarrierTrackingNumber"].ToString();
                     actualOrderDetail.OrderQty = Convert.ToInt32(reader["OrderQty"]);
                     actualOrderDetail.ProductName = reader["Name"].ToString();
-                    actualOrderDetail.SpecialOfferID = Convert.ToInt32(reader["SpecialOfferID"]);
+                    //actualOrderDetail.SpecialOfferID = Convert.ToInt32(reader["SpecialOfferID"]);
                     actualOrderDetail.SalesOrderDetailID = Convert.ToInt32(reader["SalesOrderDetailID"]);
 
 
@@ -116,9 +117,7 @@ namespace MantenimientoPedidos.DataAccess
 
                 query.Append(" DELETE       sal ");
                 query.Append(" FROM         Sales.SalesOrderDetail as sal ");
-                query.Append(" inner join   Sales.SpecialOfferProduct on sal.ProductID = SpecialOfferProduct.ProductID ");
                 query.Append(" WHERE        SalesOrderID = @salesOrderId ");
-                query.Append(" AND          SpecialOfferProduct.SpecialOfferID = @specialOfferId ");
                 query.Append(" AND          SalesOrderDetailID = @salesOrderDetailId ");
 
                 // Init command
@@ -126,10 +125,7 @@ namespace MantenimientoPedidos.DataAccess
 
                 SqlParameter paramSalesOrderId = new SqlParameter("@salesOrderId", product.ID);
                 cmd.Parameters.Add(paramSalesOrderId);
-
-                SqlParameter paramSpecialOfferID = new SqlParameter("@specialOfferId", product.SpecialOfferID);
-                cmd.Parameters.Add(paramSpecialOfferID);
-
+                
                 SqlParameter paramSalesOrderDetailId = new SqlParameter("@salesOrderDetailId", product.SalesOrderDetailID);
                 cmd.Parameters.Add(paramSalesOrderDetailId);
 

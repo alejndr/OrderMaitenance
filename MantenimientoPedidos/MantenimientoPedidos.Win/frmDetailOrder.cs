@@ -72,7 +72,6 @@ namespace MantenimientoPedidos.Win
         private void btnModify_Click(object sender, EventArgs e)
         {
             ShowProductDetail();
-
             
         }
 
@@ -274,6 +273,7 @@ namespace MantenimientoPedidos.Win
 
                 frmProduct frmProduct = new frmProduct(_ProductData, this);
                 frmProduct.ShowDialog();
+                
             }
 
         }
@@ -318,8 +318,6 @@ namespace MantenimientoPedidos.Win
             }
         }
         
-        
-
         #endregion Private methods
         
     }

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,11 +13,15 @@ namespace MantenimientoPedidos.Win
 {
     public partial class frmBase : Form
     {
+
+        #region Constructor
+
         public frmBase()
         {
             InitializeComponent();
         }
 
+        #endregion Constructor
 
         #region Show Messages
 

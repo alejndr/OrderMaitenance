@@ -44,27 +44,27 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(32, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
+            this.label1.Size = new System.Drawing.Size(87, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nº Seguimiento";
+            this.label1.Text = "Tracking number";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(32, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Cantidad";
+            this.label2.Text = "Quantity";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(32, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Producto";
+            this.label3.Text = "Product";
             // 
             // btnAccept
             // 
@@ -72,7 +72,7 @@
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(75, 23);
             this.btnAccept.TabIndex = 3;
-            this.btnAccept.Text = "Aceptar";
+            this.btnAccept.Text = "Accept";
             this.btnAccept.UseVisualStyleBackColor = true;
             this.btnAccept.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -82,7 +82,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "Cancelar";
+            this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -104,6 +104,11 @@
             // nudQuantity
             // 
             this.nudQuantity.Location = new System.Drawing.Point(137, 92);
+            this.nudQuantity.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nudQuantity.Name = "nudQuantity";
             this.nudQuantity.Size = new System.Drawing.Size(75, 20);
             this.nudQuantity.TabIndex = 7;
@@ -122,7 +127,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmProduct";
-            this.Text = "frmProduct";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Product";
             this.Load += new System.EventHandler(this.frmProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).EndInit();
             this.ResumeLayout(false);

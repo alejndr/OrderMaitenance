@@ -67,11 +67,11 @@
             this.grbClientInformation.Size = new System.Drawing.Size(667, 68);
             this.grbClientInformation.TabIndex = 0;
             this.grbClientInformation.TabStop = false;
-            this.grbClientInformation.Text = "Información del Cliente";
+            this.grbClientInformation.Text = "Client info";
             // 
             // txtStore
             // 
-            this.txtStore.Location = new System.Drawing.Point(293, 25);
+            this.txtStore.Location = new System.Drawing.Point(285, 25);
             this.txtStore.Name = "txtStore";
             this.txtStore.Size = new System.Drawing.Size(159, 20);
             this.txtStore.TabIndex = 5;
@@ -95,27 +95,27 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(458, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Territorio:";
+            this.label3.Text = "Territory:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(244, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Tienda:";
+            this.label2.Text = "Shop:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(20, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre:";
+            this.label1.Text = "Name:";
             // 
             // groupBox2
             // 
@@ -130,7 +130,7 @@
             this.groupBox2.Size = new System.Drawing.Size(667, 68);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Información del Pedido";
+            this.groupBox2.Text = "Order info";
             // 
             // txtShippingMethod
             // 
@@ -141,7 +141,7 @@
             // 
             // txtOrderDate
             // 
-            this.txtOrderDate.Location = new System.Drawing.Point(99, 29);
+            this.txtOrderDate.Location = new System.Drawing.Point(83, 29);
             this.txtOrderDate.Name = "txtOrderDate";
             this.txtOrderDate.Size = new System.Drawing.Size(125, 20);
             this.txtOrderDate.TabIndex = 4;
@@ -156,29 +156,29 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(426, 32);
+            this.label6.Location = new System.Drawing.Point(430, 32);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 13);
+            this.label6.Size = new System.Drawing.Size(70, 13);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Método envío";
+            this.label6.Text = "Send method";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(240, 32);
+            this.label5.Location = new System.Drawing.Point(224, 32);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.Size = new System.Drawing.Size(71, 13);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Nº Pedido";
+            this.label5.Text = "Order number";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(20, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 13);
+            this.label4.Size = new System.Drawing.Size(57, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Fecha Pedido";
+            this.label4.Text = "Order date";
             // 
             // groupBox3
             // 
@@ -191,7 +191,7 @@
             this.groupBox3.Size = new System.Drawing.Size(667, 268);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Detalle del Pedido";
+            this.groupBox3.Text = "Order detail";
             // 
             // btnBack
             // 
@@ -199,7 +199,7 @@
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 3;
-            this.btnBack.Text = "Volver";
+            this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
@@ -209,7 +209,7 @@
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(75, 23);
             this.btnRemove.TabIndex = 2;
-            this.btnRemove.Text = "Eliminar";
+            this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
@@ -219,7 +219,7 @@
             this.btnModify.Name = "btnModify";
             this.btnModify.Size = new System.Drawing.Size(75, 23);
             this.btnModify.TabIndex = 1;
-            this.btnModify.Text = "Modificar";
+            this.btnModify.Text = "Modify";
             this.btnModify.UseVisualStyleBackColor = true;
             this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
@@ -245,7 +245,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grbClientInformation);
             this.Name = "frmDetailOrder";
-            this.Text = "Detalle del Pedido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Order Detail";
             this.Load += new System.EventHandler(this.frmDetailOrder_Load);
             this.grbClientInformation.ResumeLayout(false);
             this.grbClientInformation.PerformLayout();
