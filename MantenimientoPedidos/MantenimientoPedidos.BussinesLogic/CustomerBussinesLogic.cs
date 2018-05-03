@@ -6,10 +6,7 @@ namespace MantenimientoPedidos.BussinesLogic
     public class CustomerBussinesLogic
     {
         #region Global variables
-
-        /// <summary>
-        /// Customer data access.
-        /// </summary>
+        
         private CustomerDataAccess _customerDataAccess;
 
         #endregion Global variables
@@ -38,6 +35,11 @@ namespace MantenimientoPedidos.BussinesLogic
             return _customerDataAccess.ValidateExistCustomer(customerId);
         }
 
+        /// <summary>
+        /// Call the method to get the customer info
+        /// </summary>
+        /// <param name="customerId"></param>
+        /// <returns></returns>
         public Customer GetCustomer(int customerId)
         {
             return _customerDataAccess.GetCustomer(customerId);

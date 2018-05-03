@@ -27,7 +27,10 @@ namespace MantenimientoPedidos.Win
 
         #region Constructor
 
-        
+        /// <summary>
+        /// Constructor.
+        /// </summary>
+        /// <param name="customerId"></param>
         public frmMain(int customerId)
         {
             InitializeComponent();

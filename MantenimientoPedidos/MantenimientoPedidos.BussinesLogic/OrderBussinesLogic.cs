@@ -11,9 +11,6 @@ namespace MantenimientoPedidos.BussinesLogic
 
         #region Global variables
 
-        /// <summary>
-        /// Order data access.
-        /// </summary>
         private OrderDataAccess _OrderDataAccess;
 
         #endregion Global variables
@@ -42,7 +39,6 @@ namespace MantenimientoPedidos.BussinesLogic
         public List<Order> Search(int customerId, DateTime dateFrom, DateTime dateTo)
         {
             return _OrderDataAccess.Search(customerId, dateFrom, dateTo);
-
         }
 
         /// <summary>
@@ -53,9 +49,7 @@ namespace MantenimientoPedidos.BussinesLogic
         {
             _OrderDataAccess.RemoveOrder(orderToRemove);
         }
-
         
-
         #endregion Public methods
     }
 }

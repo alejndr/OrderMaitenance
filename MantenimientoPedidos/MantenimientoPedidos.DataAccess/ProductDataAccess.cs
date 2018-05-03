@@ -3,9 +3,7 @@ using MantenimientoPedidos.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace MantenimientoPedidos.DataAccess
 {
@@ -148,6 +146,11 @@ namespace MantenimientoPedidos.DataAccess
             }
         }
 
+        /// <summary>
+        /// Modify the order quantity.
+        /// </summary>
+        /// <param name="product"></param>
+        /// <param name="orderQty"></param>
         public void ModifyOrderQty(Product product, int orderQty)
         {
             SqlConnection conn = new SqlConnection(base.ConnectionString);
