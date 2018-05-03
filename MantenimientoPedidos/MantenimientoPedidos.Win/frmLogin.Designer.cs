@@ -96,6 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(374, 207);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -103,6 +104,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtIDUser);
             this.Controls.Add(this.btn_Conect);
+            this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

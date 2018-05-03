@@ -97,7 +97,12 @@ namespace MantenimientoPedidos.Win
         /// <param name="e"></param>
         private void grdOrders_DoubleClick(object sender, EventArgs e)
         {
-            ShowOrderDetail();
+            Order isEnabled = (Order)grdOrders.CurrentRow.DataBoundItem;
+            if (isEnabled.Enable)
+            {
+                ShowOrderDetail();
+            }
+            
         }
 
         /// <summary>
@@ -255,8 +260,8 @@ namespace MantenimientoPedidos.Win
             }
             else
             {
-                    // base.ShowMessage("The start date has to be lower than the end date.", "Error", MessageType.Info);
-                    MessageBoxEx.Show("The start date has to be lower than the end date.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    base.ShowMessage("The start date has to be lower than the end date.", "Error", MessageType.Error);
+                    
                 }
             }
             catch
@@ -298,14 +303,21 @@ namespace MantenimientoPedidos.Win
 
                 if (isEnabled.Enable == true)
                 {
+                    
                     btnModify.Enabled = true;
                     btnRemove.Enabled = true;
+                    
                 }
                 else
                 {
                     btnModify.Enabled = false;
                     btnRemove.Enabled = false;
                 }
+            }
+            else
+            {
+                btnModify.Enabled = false;
+                btnRemove.Enabled = false;
             }
         }
 

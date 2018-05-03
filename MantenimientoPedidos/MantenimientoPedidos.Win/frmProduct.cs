@@ -137,7 +137,7 @@ namespace MantenimientoPedidos.Win
             }
             else
             {
-                ShowMessage("The quantity must be greater than zero.", "Error", MessageType.Info);
+                ShowMessage("The quantity must be greater than zero.", "Error", MessageType.Error);
 
             }
 

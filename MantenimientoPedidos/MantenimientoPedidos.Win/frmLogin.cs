@@ -113,7 +113,7 @@ namespace MantenimientoPedidos.Win
                 }
                 else
                 {
-                    MessageBoxEx.Show("El usuario no existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    base.ShowMessage("El usuario no existe", "Error", MessageType.Error);
                     txtIDUser.Clear();
                     txtPassword.Clear();
                     txtIDUser.Focus();
@@ -122,7 +122,7 @@ namespace MantenimientoPedidos.Win
             }
             else
             {
-                base.ShowMessage("Tiene que introducir un numero", "Error", MessageType.Info);
+                base.ShowMessage("Tiene que introducir un numero", "Error", MessageType.Error);
                 txtIDUser.Clear();
                 txtIDUser.Focus();
             }
